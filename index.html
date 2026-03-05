@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M&A 事業売却 募集フォーム | 三崎未来ホールディングス株式会社</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-label">Entry Form</p>
+      <h1 class="hero-title">M&amp;A 事業売却<br>募集フォーム</h1>
+      <p class="hero-desc">
+        M&amp;A・事業売却をご検討されている方向けのエントリーフォームです。<br>
+        ご入力いただいた内容をもとに社内にて検討させていただきます。<br>
+        大変多くのご応募をいただいているため、詳細なお話をお伺いさせていただきたい場合のみ、ご連絡させていただきます。
+      </p>
+      <p class="hero-note">
+        ※ご入力いただいた情報は秘密厳守で取り扱い、M&amp;A検討目的以外には使用いたしません。
+      </p>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <main class="form-section">
+    <div class="form-container">
+
+      <form id="maForm" novalidate>
+
+        <!-- Section 1: 基本情報 -->
+        <div class="form-block">
+          <div class="section-header">
+            <span class="section-number">01</span>
+            <h2 class="section-title">基本情報</h2>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="companyName">
+              会社名・屋号 <span class="required">*</span>
+            </label>
+            <input
+              type="text"
+              id="companyName"
+              name="companyName"
+              class="field-input"
+              placeholder="例：株式会社〇〇"
+              required
+            />
+            <span class="error-msg" id="err-companyName">会社名・屋号を入力してください。</span>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="representativeName">
+              代表者名 <span class="required">*</span>
+            </label>
+            <input
+              type="text"
+              id="representativeName"
+              name="representativeName"
+              class="field-input"
+              placeholder="例：山田 太郎"
+              required
+            />
+            <span class="error-msg" id="err-representativeName">代表者名を入力してください。</span>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="companyUrl">
+              会社HP URL <span class="required">*</span>
+            </label>
+            <input
+              type="url"
+              id="companyUrl"
+              name="companyUrl"
+              class="field-input"
+              placeholder="例：https://example.co.jp"
+              required
+            />
+            <span class="error-msg" id="err-companyUrl">会社HP URLを入力してください。</span>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="employees">
+              従業員数 <span class="required">*</span>
+            </label>
+            <input
+              type="text"
+              id="employees"
+              name="employees"
+              class="field-input"
+              placeholder="例：50名"
+              required
+            />
+            <span class="error-msg" id="err-employees">従業員数を入力してください。</span>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="shareholders">
+              株主情報（大株主） <span class="required">*</span>
+            </label>
+            <textarea
+              id="shareholders"
+              name="shareholders"
+              class="field-textarea"
+              placeholder="例：代表取締役 山田太郎 80%、〇〇株式会社 20%"
+              rows="3"
+              required
+            ></textarea>
+            <span class="error-msg" id="err-shareholders">株主情報を入力してください。</span>
+          </div>
+        </div>
+
+        <!-- Section 2: 財務状況 -->
+        <div class="form-block">
+          <div class="section-header">
+            <span class="section-number">02</span>
+            <h2 class="section-title">財務状況</h2>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="revenue">
+              売上（直近） <span class="required">*</span>
+            </label>
+            <input
+              type="text"
+              id="revenue"
+              name="revenue"
+              class="field-input"
+              placeholder="例：1億円"
+              required
+            />
+            <span class="error-msg" id="err-revenue">売上（直近）を入力してください。</span>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="operatingProfit">
+              営業利益（直近） <span class="required">*</span>
+            </label>
+            <input
+              type="text"
+              id="operatingProfit"
+              name="operatingProfit"
+              class="field-input"
+              placeholder="例：2,000万円"
+              required
+            />
+            <span class="error-msg" id="err-operatingProfit">営業利益（直近）を入力してください。</span>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="netAssets">
+              純資産（直近） <span class="required">*</span>
+            </label>
+            <input
+              type="text"
+              id="netAssets"
+              name="netAssets"
+              class="field-input"
+              placeholder="例：5,000万円"
+              required
+            />
+            <span class="error-msg" id="err-netAssets">純資産（直近）を入力してください。</span>
+          </div>
+        </div>
+
+        <!-- Section 3: その他 -->
+        <div class="form-block">
+          <div class="section-header">
+            <span class="section-number">03</span>
+            <h2 class="section-title">その他</h2>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="saleReason">
+              売却理由 <span class="required">*</span>
+            </label>
+            <textarea
+              id="saleReason"
+              name="saleReason"
+              class="field-textarea"
+              placeholder="売却をご検討されている理由をご記入ください。"
+              rows="4"
+              required
+            ></textarea>
+            <span class="error-msg" id="err-saleReason">売却理由を入力してください。</span>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="desiredPrice">
+              希望売却価格 <span class="required">*</span>
+            </label>
+            <input
+              type="text"
+              id="desiredPrice"
+              name="desiredPrice"
+              class="field-input"
+              placeholder="例：3億円"
+              required
+            />
+            <span class="error-msg" id="err-desiredPrice">希望売却価格を入力してください。</span>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="saleTimeline">
+              売却時期 <span class="required">*</span>
+            </label>
+            <input
+              type="text"
+              id="saleTimeline"
+              name="saleTimeline"
+              class="field-input"
+              placeholder="例：2025年中、できるだけ早く 等"
+              required
+            />
+            <span class="error-msg" id="err-saleTimeline">売却時期を入力してください。</span>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="email">
+              連絡用 メールアドレス <span class="required">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="field-input"
+              placeholder="例：info@example.co.jp"
+              required
+            />
+            <span class="error-msg" id="err-email">正しいメールアドレスを入力してください。</span>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="phone">
+              連絡用 電話番号 <span class="required">*</span>
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="field-input"
+              placeholder="例：090-1234-5678"
+              required
+            />
+            <span class="error-msg" id="err-phone">電話番号を入力してください。</span>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <div class="submit-area">
+          <p class="submit-note">
+            すべての必須項目（<span class="required">*</span>）をご入力の上、送信してください。
+          </p>
+          <button type="submit" class="submit-btn" id="submitBtn">
+            <span class="btn-text">送信する</span>
+            <span class="btn-arrow">→</span>
+          </button>
+        </div>
+
+      </form>
+
+      <!-- Success Message -->
+      <div class="success-message" id="successMessage" style="display:none;">
+        <div class="success-icon">✓</div>
+        <h2 class="success-title">送信完了</h2>
+        <p class="success-text">
+          ご応募ありがとうございました。<br>
+          内容を検討の上、担当者よりご連絡いたします。
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
